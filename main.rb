@@ -27,7 +27,7 @@ balance = 0
 if user_input == 'D'
   puts "How much would you like to deposit?"
   amount = gets.chomp.to_i
-  if amount < 0
+  if amount <= 0
     puts "Invalid amount, please enter value > 0"
   elsif
   balance = balance + amount
@@ -36,7 +36,7 @@ if user_input == 'D'
 elsif user_input == 'W'
   puts "How much would you like to withdraw?"
   amount = gets.chomp.to_i
-  if amount < 0
+  if amount <= 0
     puts "Invalid amount, please enter value > 0"
   elsif
   balance = balance - amount
