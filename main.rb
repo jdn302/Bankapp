@@ -12,15 +12,17 @@
 
 puts "Welcome to the Coder Bank, Please enter your name"
 name = gets.chomp
+balance = 0.0
 
-puts "hello #{name}, please choose from the options below
+loop do
+  puts "\nhello #{name}, please choose from the options below
 D - Deposit
 W - Withdraw
 B - Show Balance
+Q - Quit
 "
 
-user_input = gets.chomp.capitalize
-balance = 0
+  user_input = gets.chomp.capitalize
 
 # conditional statement: if else logic to take different path based on whether the conditon was evaluated to true
 
@@ -43,7 +45,11 @@ elsif user_input == 'W'
   puts "You withdrew $#{amount}, take the cash"
   end
 elsif user_input == 'B'
-  puts "Your balance is #{balance}"
-  else user_input == 'not D, W, B'
+  puts "Your balance is $#{balance}"
+elsif user_input == 'Q'
+  puts "Thank you for using Coder Bank. Goodbye!"
+  break
+else
   puts "Invalid entry, please try again"
+end
 end
