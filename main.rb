@@ -47,3 +47,6 @@ elsif user_input == 'B'
   else user_input == 'not D, W, B'
   puts "Invalid entry, please try again"
 end
+
+
+puts "Thanks for choosing Coder Bank, have a nice day"
